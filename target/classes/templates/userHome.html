@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background: linear-gradient(-45deg, red, blue, white, #006600);
+			background-size: 400% 400%;
+			animation: gradient 15s ease infinite;
+		}
+
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+
+			50% {
+				background-position: 100% 50%;
+			}
+
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+
+		.container {
+			text-align: center;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+		}
+
+		h1 {
+			color: #333;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Welcome to User Page!</h1>
+		<p>We're glad to have you here. Enjoy your stay!</p>
+		<a href="/login">
+			<p>Back to Login</p>
+		</a>
+		<a href="/admin/home">
+			<p>Adminpage</p>
+		</a>
+	</div>
+</body>
+
+</html>

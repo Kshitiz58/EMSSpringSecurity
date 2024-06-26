@@ -1,0 +1,11 @@
+version: 4.30.0
+services:
+ website: 
+  image: oauthcom:latest
+  container_name: oauthcom
+  build: .
+  restart: always
+  ports: 
+   - 8080:8080
+  depends_on: 
+   - mysql

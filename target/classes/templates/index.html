@@ -51,7 +51,8 @@
 							<a class="nav-link" href="#feedback-section">Testimonials</a>
 						</li>
 						<li class="nav-item btn-contact-us pl-4 pl-lg-0">
-							<button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Login</button>
+							<button class="btn btn-danger ml-1" data-toggle="modal" data-target="#exampleModal">Learn
+								More</button>
 						</li>
 						<!-- Modal for Contact - us Button -->
 						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -62,46 +63,42 @@
 										<img src="Homepage/images/logo2.png" alt="Logo">
 									</div>
 									<div class="modal-body">
-										<form action="/login" method="post" class="my-5">
-											<p style="color:red">[[${message}]]</p>
-											<div class="border rounded-2 p-4 mt-5">
-												<div class="login-form">
-													<h5 class="fw-bold mb-5">Sign in to access homepage.</h5>
-													<div class="mb-3">
-														<label class="form-label">Username</label>
-														<input type="text" name="username" class="form-control"
-															placeholder="Enter Username" required />
-													</div>
-													<div class="mb-3">
-														<label class="form-label">Password</label>
-														<input type="password" name="password" class="form-control"
-															placeholder="Enter password" required />
-													</div>
-													<div>
-														<p>
-															<a href="/forgetpassword">Forget Password</a>
-														</p>
-													</div>
-													<button type="submit" class="btn btn-info">LOGIN</button>
-													<button type="button" class="btn btn-light"
-														data-dismiss="modal">Close</button>
-												</div>
-												<div class="text-center pt-4">
-													<span>Not registered?</span>
-													<a data-toggle="modal" data-target="#exampleModal1"
-														class="text-blue text-decoration-underline ms-2">
-														<p style="color: darkgreen">SignUp</p>
-													</a>
-												</div>
-											</div>
+										<div>
+											<P>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad libero
+												repellat
+												iusto soluta molestiae. Iure sed blanditiis eveniet sint rem veniam.
+											</P>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi et
+												neque
+												deserunt tenetur quaerat aperiam quae consectetur enim. Consequatur
+												ipsum
+												vel quibusdam ut animi commodi perspiciatis vitae optio reprehenderit
+												dolor?
+											</p>
+											<P>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+												laboriosam
+												numquam nesciunt neque nulla. Consequatur deserunt tempora nulla vitae
+												ducimus quae, iure veniam quibusdam cum commodi, cumque deleniti aut
+												nisi.
+											</P>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquid
+												itaque quasi, illo nemo voluptas odio sit, ducimus nulla animi.
+											</p>
+										</div>
+										<div class="d-grid py-3 mt-4">
+											<button type="button" class="btn btn-light"
+												data-dismiss="modal">Close</button>
+										</div>
 									</div>
-									</form>
 								</div>
 							</div>
 						</div>
+					</ul>
 				</div>
-				</ul>
-			</div>
 			</div>
 		</nav>
 	</header>
@@ -112,67 +109,8 @@
 				convinent.
 			</h6>
 			<div>
-				<button class="btn btn-primary mr-1" data-toggle="modal" data-target="#exampleModal1">Signup</button>
-				<!-- Modal for Contact - us Button -->
-				<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
-					aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<img src="Homepage/images/logo2.png" alt="Logo">
-							</div>
-							<div class="modal-body">
-								<form action="/signup" method="post" class="my-5">
-									<div class="border rounded-2 p-4 mt-5">
-										<div class="login-form">
-											<h5 class="fw-bold mb-5">Create your account for Login.</h5>
-											<div class="mb-3">
-												<input type="text" name="fname" class="form-control"
-													placeholder="Enter Firstname" required>
-											</div>
-											<div class="mb-3">
-												<input type="text" name="lname" class="form-control"
-													placeholder="Enter Lastname" required />
-											</div>
-											<div class="mb-3">
-												<input type="text" name="username" class="form-control"
-													placeholder="Enter Username" required />
-											</div>
-											<div class="mb-3">
-												<input type="password" name="password" class="form-control"
-													placeholder="Enter password" required />
-											</div>
-											<div class="mb-3">
-												<div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="checkbox"
-															value="ADMIN,USER" name="role" />
-														<label class="form-check-label" for="Java">ADMIN</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="checkbox" value="USER"
-															name="role" />
-														<label class="form-check-label" for="MERN">USER</label>
-													</div>
-												</div>
-											</div>
-											<div class="g-recaptcha"
-												data-sitekey="6LcNy8YpAAAAAGuMQfKwMm_B3uX-5TpMEiMbT0Cr">
-											</div>
-
-											<div class="d-grid py-3 mt-4">
-												<button type="submit" class="btn btn-lg btn-primary">SIGNUP</button>
-												<button type="button" class="btn btn-light"
-													data-dismiss="modal">Close</button>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<button class="btn btn-danger ml-1">Learn more</button>
+				<a href="/signup"><button class="btn btn-primary mr-1">Signup</button></a>
+				<a href="/login"><button class="btn btn-info">Login</button></a>
 			</div>
 			<img src="Homepage/images/Group171.svg" alt="" class="img-fluid">
 		</div>

@@ -1,0 +1,13 @@
+com\spring\security\repository\CustomUserRepository.class
+com\spring\security\service\SubscriberService.class
+com\spring\security\model\MyUser.class
+com\spring\security\controller\RestControllerForSignup.class
+com\spring\security\utlis\VerifyRecaptcha.class
+com\spring\security\model\Subscriber.class
+com\spring\security\service\impl\SubcriberServiceImpl.class
+com\spring\security\repository\SubscriberRepository.class
+com\spring\security\service\MyUserDetailsService.class
+com\spring\security\SpringSecurityApplication.class
+com\spring\security\config\AuthSuccessHandler.class
+com\spring\security\controller\UserController.class
+com\spring\security\config\SecurityConfig.class

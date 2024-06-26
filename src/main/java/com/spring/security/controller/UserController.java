@@ -5,7 +5,6 @@ import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -37,21 +36,20 @@ public class UserController {
 	}
 	@GetMapping("/admin/home")
 	public String getAdminpage() {
-		return "admin";
+		return "adminHome";
 	}
 	@GetMapping("/user/home")
 	public String getUserpage() {
-		return "user";
+		return "userHome";
 	}
 
 	@PostMapping("/signup")
-	public String postSignup(@ModelAttribute MyUser user, Model model, HttpSession session, 
+	public String postSignup(@ModelAttribute MyUser user, HttpSession session, 
 			@RequestParam("g-recaptcha-response") String recaptCode) throws IOException{
 		if(VerifyRecaptcha.verify(recaptCode)) {
 			user.setPassword(passwordEncoder.encode(user.getPassword()));
 			userRepo.save(user);
 		}
-		model.addAttribute("message","You are Robot!!");
 		return "redirect:/";
 	}
 	
